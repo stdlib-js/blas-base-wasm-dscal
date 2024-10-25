@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-18)
+## Unreleased (2024-10-25)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`f62e6d1`](https://github.com/stdlib-js/stdlib/commit/f62e6d1b3e4c6ca8602c14b47c25d8e23759eefc) - **build:** update compiler flags and export resolution _(by Athan Reines)_
 -   [`bfcfb89`](https://github.com/stdlib-js/stdlib/commit/bfcfb8907b096bb574c9dffba4cc256687a4f213) - **feat:** add `blas/base/dscal-wasm` [(#2985)](https://github.com/stdlib-js/stdlib/pull/2985) _(by Aman Bhansali, Athan Reines)_
 
 </details>
