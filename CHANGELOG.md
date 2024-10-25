@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`91e37be`](https://github.com/stdlib-js/stdlib/commit/91e37be0fc89c072ee006802d5a568eab3003c9a) - **docs:** fix missing license headers _(by Athan Reines)_
 -   [`f62e6d1`](https://github.com/stdlib-js/stdlib/commit/f62e6d1b3e4c6ca8602c14b47c25d8e23759eefc) - **build:** update compiler flags and export resolution _(by Athan Reines)_
 -   [`bfcfb89`](https://github.com/stdlib-js/stdlib/commit/bfcfb8907b096bb574c9dffba4cc256687a4f213) - **feat:** add `blas/base/dscal-wasm` [(#2985)](https://github.com/stdlib-js/stdlib/pull/2985) _(by Aman Bhansali, Athan Reines)_
 
