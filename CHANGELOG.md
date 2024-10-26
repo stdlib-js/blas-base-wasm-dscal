@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`4ace02e`](https://github.com/stdlib-js/stdlib/commit/4ace02ecce4fef6fb843449f2fa30f34d37593f0) - **docs:** fix comments _(by Athan Reines)_
 -   [`263ed0d`](https://github.com/stdlib-js/stdlib/commit/263ed0d5d9557daf7e471ce88bdfff5bf0aab168) - **docs:** fix param name _(by Athan Reines)_
 -   [`d3c6d35`](https://github.com/stdlib-js/stdlib/commit/d3c6d356c0789dc258bf9c56aeeb0f5e67fa7f8a) - **docs:** remove unused require _(by Athan Reines)_
 -   [`2c2e66f`](https://github.com/stdlib-js/stdlib/commit/2c2e66f414ee0df49f854cc3b48aad679a3666bd) - **docs:** fix example _(by Athan Reines)_
