@@ -35,32 +35,38 @@ limitations under the License.
 
 > Multiply a vector `x` by a constant `alpha`.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/blas-base-dscal-wasm
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var dscal = require( '@stdlib/blas-base-dscal-wasm' );
+dscal = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dscal-wasm@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var dscal = require( 'path/to/vendor/umd/blas-base-dscal-wasm/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dscal-wasm@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.dscal;
+})();
+</script>
 ```
 
 #### dscal.main( N, alpha, x, strideX )
@@ -301,9 +307,14 @@ The function has the following additional parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var dscal = require( '@stdlib/blas-base-dscal-wasm' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-dscal-wasm@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var opts = {
     'dtype': 'float64'
@@ -313,6 +324,11 @@ console.log( x );
 
 dscal.ndarray( x.length, 5.0, x, 1, 0 );
 console.log( x );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -405,13 +421,13 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/umd
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/umd
 
-[@stdlib/blas/base/dscal]: https://github.com/stdlib-js/blas-base-dscal
+[@stdlib/blas/base/dscal]: https://github.com/stdlib-js/blas-base-dscal/tree/umd
 
 </section>
 
