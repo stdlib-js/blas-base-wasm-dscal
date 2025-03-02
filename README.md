@@ -40,7 +40,7 @@ limitations under the License.
 ## Installation
 
 ```bash
-npm install @stdlib/blas-base-dscal-wasm
+npm install @stdlib/blas-base-wasm-dscal
 ```
 
 Alternatively,
@@ -60,7 +60,7 @@ To view installation and usage instructions specific to each branch build, be su
 ## Usage
 
 ```javascript
-var dscal = require( '@stdlib/blas-base-dscal-wasm' );
+var dscal = require( '@stdlib/blas-base-wasm-dscal' );
 ```
 
 #### dscal.main( N, alpha, x, strideX )
@@ -90,8 +90,8 @@ var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
-dscal.main( 5, 5.0, x, -1 );
-// x => <Float64Array>[ 5.0, 10.0, 15.0, 20.0, 25.0 ]
+dscal.main( 3, 5.0, x, -2 );
+// x => <Float64Array>[ 5.0, 2.0, 15.0, 4.0, 25.0, 6.0 ]
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -303,7 +303,7 @@ The function has the following additional parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var dscal = require( '@stdlib/blas-base-dscal-wasm' );
+var dscal = require( '@stdlib/blas-base-wasm-dscal' );
 
 var opts = {
     'dtype': 'float64'
@@ -363,19 +363,19 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-dscal-wasm.svg
-[npm-url]: https://npmjs.org/package/@stdlib/blas-base-dscal-wasm
+[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-wasm-dscal.svg
+[npm-url]: https://npmjs.org/package/@stdlib/blas-base-wasm-dscal
 
-[test-image]: https://github.com/stdlib-js/blas-base-dscal-wasm/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-wasm-dscal/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/actions/workflows/test.yml?query=branch:main
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-dscal-wasm/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-dscal-wasm?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-wasm-dscal/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-wasm-dscal?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-dscal-wasm.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-dscal-wasm/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-wasm-dscal.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-wasm-dscal/main
 
 -->
 
@@ -389,15 +389,15 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-dscal-wasm/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-wasm-dscal/main/LICENSE
 
 [blas]: http://www.netlib.org/blas
 

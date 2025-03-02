@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/blas-base-dscal-wasm",
+  "name": "@stdlib/blas-base-wasm-dscal",
   "version": "0.0.0",
   "description": "Multiply a vector `x` by a scalar `alpha`.",
   "license": "Apache-2.0",
@@ -36,7 +36,7 @@
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
-    "url": "git://github.com/stdlib-js/blas-base-dscal-wasm.git"
+    "url": "git://github.com/stdlib-js/blas-base-wasm-dscal.git"
   },
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
@@ -74,6 +74,7 @@
     "@stdlib/random-base-discrete-uniform": "^0.2.1",
     "@stdlib/string-base-base64-to-uint8array": "github:stdlib-js/string-base-base64-to-uint8array#main",
     "@stdlib/string-replace": "^0.2.2",
+    "@stdlib/time-current-year": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",

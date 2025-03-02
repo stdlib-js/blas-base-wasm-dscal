@@ -38,19 +38,19 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/dscal-wasm"
-%% click B href "https://github.com/stdlib-js/blas-base-dscal-wasm/tree/main"
-%% click C href "https://github.com/stdlib-js/blas-base-dscal-wasm/tree/production"
-%% click D href "https://github.com/stdlib-js/blas-base-dscal-wasm/tree/esm"
-%% click E href "https://github.com/stdlib-js/blas-base-dscal-wasm/tree/deno"
-%% click F href "https://github.com/stdlib-js/blas-base-dscal-wasm/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/wasm/dscal"
+%% click B href "https://github.com/stdlib-js/blas-base-wasm-dscal/tree/main"
+%% click C href "https://github.com/stdlib-js/blas-base-wasm-dscal/tree/production"
+%% click D href "https://github.com/stdlib-js/blas-base-wasm-dscal/tree/esm"
+%% click E href "https://github.com/stdlib-js/blas-base-wasm-dscal/tree/deno"
+%% click F href "https://github.com/stdlib-js/blas-base-wasm-dscal/tree/umd"
 ```
 
-[stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/dscal-wasm
-[production-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/production
-[deno-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-dscal-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-dscal-wasm/blob/esm/README.md
+[stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/blas/base/wasm/dscal
+[production-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/production
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-dscal/blob/esm/README.md
