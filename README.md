@@ -379,8 +379,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -401,7 +401,7 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [blas]: http://www.netlib.org/blas
 
-[dscal]: https://www.netlib.org/lapack/explore-html-3.6.1/de/da4/group__double__blas__level1_ga793bdd0739bbd0e0ec8655a0df08981a.html
+[dscal]: https://www.netlib.org/lapack/explore-html/d2/de8/group__scal_ga0590f8db475e11dc2c9137bb13887acf.html
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
