@@ -35,19 +35,32 @@ limitations under the License.
 
 > Multiply a vector `x` by a constant `alpha`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-wasm-dscal
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import dscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-dscal@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-dscal/tags). For example,
-
-```javascript
-import dscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-dscal@v0.1.1-esm/index.mjs';
+var dscal = require( '@stdlib/blas-base-wasm-dscal' );
 ```
 
 #### dscal.main( N, alpha, x, strideX )
@@ -55,7 +68,7 @@ import dscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-dscal@v0
 Multiplies a vector `x` by a constant `alpha`.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 
@@ -73,7 +86,7 @@ The function has the following parameters:
 The `N` and stride parameters determine which elements in the input strided array are accessed at runtime. For example, to multiply every other value in `x` by `alpha` in reverse order,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
@@ -86,7 +99,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial array:
 var x0 = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
@@ -103,7 +116,7 @@ dscal.main( 3, 5.0, x1, -2 );
 Multiplies a vector `x` by a constant `alpha` using alternative indexing semantics.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
 
@@ -118,7 +131,7 @@ The function has the following additional parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example, to multiply every other value in `x` by a constant `alpha` starting from the second element,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var x = new Float64Array( [ 1.0, 2.0, 3.0, 4.0, 5.0, 6.0 ] );
 
@@ -137,7 +150,7 @@ Returns a new WebAssembly [module wrapper][@stdlib/wasm/module-wrapper] instance
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@esm/index.mjs';
+var Memory = require( '@stdlib/wasm-memory' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -160,11 +173,11 @@ Multiplies a vector `x` by a constant `α`.
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@esm/index.mjs';
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@esm/index.mjs';
-import ones from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
-import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bytes-per-element@esm/index.mjs';
+var Memory = require( '@stdlib/wasm-memory' );
+var oneTo = require( '@stdlib/array-one-to' );
+var ones = require( '@stdlib/array-ones' );
+var zeros = require( '@stdlib/array-zeros' );
+var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -216,11 +229,11 @@ Multiplies a vector `x` by a constant `α` using alternative indexing semantics.
 <!-- eslint-disable node/no-sync -->
 
 ```javascript
-import Memory from 'https://cdn.jsdelivr.net/gh/stdlib-js/wasm-memory@esm/index.mjs';
-import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@esm/index.mjs';
-import ones from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-ones@esm/index.mjs';
-import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-zeros@esm/index.mjs';
-import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bytes-per-element@esm/index.mjs';
+var Memory = require( '@stdlib/wasm-memory' );
+var oneTo = require( '@stdlib/array-one-to' );
+var ones = require( '@stdlib/array-ones' );
+var zeros = require( '@stdlib/array-zeros' );
+var bytesPerElement = require( '@stdlib/ndarray-base-bytes-per-element' );
 
 // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -288,14 +301,9 @@ The function has the following additional parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import dscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-dscal@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var dscal = require( '@stdlib/blas-base-wasm-dscal' );
 
 var opts = {
     'dtype': 'float64'
@@ -305,10 +313,6 @@ console.log( x );
 
 dscal.ndarray( x.length, 5.0, x, 1, 0 );
 console.log( x );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -332,7 +336,7 @@ console.log( x );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -362,8 +366,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-wasm-dscal.svg
 [npm-url]: https://npmjs.org/package/@stdlib/blas-base-wasm-dscal
 
-[test-image]: https://github.com/stdlib-js/blas-base-wasm-dscal/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/blas-base-wasm-dscal/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-base-wasm-dscal/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-wasm-dscal/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/blas-base-wasm-dscal?branch=main
@@ -401,13 +405,13 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/esm
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/esm
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
 
-[@stdlib/blas/base/dscal]: https://github.com/stdlib-js/blas-base-dscal/tree/esm
+[@stdlib/blas/base/dscal]: https://github.com/stdlib-js/blas-base-dscal
 
 </section>
 
